@@ -71,11 +71,8 @@ header {
 .hamburger-menu {
     position: absolute;
     top: 0;
-    /* ---------- NEW ------------- */
-    /* metto la display a block, quindi visibile, */
-    /* ma sposto l'elemento tutto a destra fuori dalla view port per nasconderlo */
-    right: 100%;
-    display: block;
+    right: 0%;
+    display: none;
     padding: 20px;
     width: 100%;
     height: 100%;
@@ -132,13 +129,19 @@ header {
     }
 
     .hamburger-menu.active {
-        /* con l'animazione sposto il menu, che si trova tutto sulla sua sinistra */
-        /* e lo sposto verso destra in modo  da farlo apparire */
+        display: block;
+    }
+
+    .hamburger-menu.inside {
+        /* sposto il menu tutto a sinistra */
+        /* poi con l'animazione muovo il menu, che si trova nascosto tutto a sinistra */
+        /* e lo sposto verso destra in modo  da farlo entrare in scena */
+        right: 100%;
         animation: 1s ease-out inFromLeft forwards;
     }
 
-    .hamburger-menu.hidden {
-        /* risposto il menu verso sinistra per farlo scomparire */
+    .hamburger-menu.outside {
+        /* sposto il menu verso sinistra per farlo scomparire */
         animation: 1s ease-out outToLeft forwards;
     }
 }
