@@ -79,6 +79,8 @@ header {
     min-width: 100vw;
     min-height: 100vh;
     background: #2B3F58;
+    /* ---------- NEW ------------- */
+    transition: display 3s;
 }
 
 /* lista del menu in verticale */
