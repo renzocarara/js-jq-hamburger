@@ -21,7 +21,9 @@ $('.header-right>a').click(function() {
     // quando l'hamburger viene cliccato
     // mostro il menu verticale a tutto schermo
     // aggiungendo la classe active all'elemento menu verticale
+    $('.hamburger-menu').removeClass('hidden');
     $('.hamburger-menu').addClass('active');
+    console.log("click rilevato");
 });
 
 // seleziono le ancore figlie dirette di hamburger-menu
@@ -31,4 +33,5 @@ $('.hamburger-menu>a').click(function() {
     // nascondo il menu verticale a tutto schermo
     // rimuovendo la classe .active
     $('.hamburger-menu').removeClass('active');
+    $('.hamburger-menu').addClass('hidden');
 });
