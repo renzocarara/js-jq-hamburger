@@ -29,5 +29,6 @@ $('.header-right>a').click(function() {
 $('.hamburger-menu>a').click(function() {
     // quando la "X" viene cliccata
     // nascondo il menu verticale a tutto schermo
+    // rimuovendo la classe .active
     $('.hamburger-menu').removeClass('active');
 });

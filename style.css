@@ -71,7 +71,9 @@ header {
 .hamburger-menu {
     position: absolute;
     top: 0;
-    left: 0;
+    /* ---------- NEW ------------- */
+    /* sposto l'elemento tutto a destra fuori dalla view port */
+    right: 100%;
     display: none;
     padding: 20px;
     width: 100%;
@@ -79,8 +81,7 @@ header {
     min-width: 100vw;
     min-height: 100vh;
     background: #2B3F58;
-    /* ---------- NEW ------------- */
-    transition: display 3s;
+    animation: 1s linear outFromLeft forwards;
 }
 
 /* lista del menu in verticale */
@@ -132,5 +133,12 @@ header {
 
     .hamburger-menu.active {
         display: block;
+        animation: 1.5s ease-out InFromLeft forwards;
+    }
+}
+
+@keyframes InFromLeft {
+    100% {
+        right: 0%;
     }
 }
