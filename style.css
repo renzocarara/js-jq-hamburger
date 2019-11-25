@@ -128,7 +128,6 @@ header {
         font-size: 20px;
     }
 
-    /* non usato?? */
     .hamburger-menu.active {
         display: block;
     }
