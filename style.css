@@ -34,12 +34,12 @@ header {
     margin-top: 15px;
 }
 
-/* applicata all'icona hamburger */
+/* l'icona hamburger */
 .header-right>a {
     display: none;
 }
 
-/* applicata alla lista che costituisce il menu in linea */
+/* lista che costituisce il menu in linea */
 .header-right ul {
     list-style: none;
     height: 100%;
@@ -99,8 +99,7 @@ header {
     border-bottom: 2px solid white;
 }
 
-/* classe da applicare all'icona "X", per farla apparire al posto dell'icona hamburger,*/
-/* dopo il click sull'icona dell'hamburger stessa */
+/* l'icona "X" */
 .close {
     display: block;
     position: absolute;
@@ -119,7 +118,7 @@ header {
         display: none;
     }
 
-    /* l'iconcina dell'hamburger appare */
+    /* l'iconcina dell'hamburger */
     .header-right>a {
         display: block;
         height: 100%;
@@ -129,6 +128,7 @@ header {
         font-size: 20px;
     }
 
+    /* non usato?? */
     .hamburger-menu.active {
         display: block;
     }
