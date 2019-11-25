@@ -16,7 +16,7 @@
 
 
 
-// SOLUZIONE 2 (PIU' CORRETTA)
+// SOLUZIONE 2 (PIU' ELEGANTE)
 // -----------------------------------------------------------------------------
 // MENU CHE APPARE E SCOMPARE PER L'AGGIUNTA/RIMOZIONE DELLA CLASSE .ACTIVE
 // -----------------------------------------------------------------------------
@@ -35,20 +35,20 @@
 
 
 //
-// SOLUZIONE 3 (VERSIONE SUGGERITA DA LUCA)
+// SOLUZIONE 3 (VERSIONE OLTRE L'ESERCIZIO - SPUNTO DI LUCA)
 // -----------------------------------------------------------------------------
 // MENU CHE APPARE E SCOMPARE DAL LATO SINISTRO
 // -----------------------------------------------------------------------------
 //gestisco l'evento click sull'icona hamburger
 $('.header-right>a').click(function() {
-    // quando l'hamburger viene cliccato mostro il menu aggiungendo la classe enter che contiene un'animazione
+    // quando l'hamburger viene cliccato mostro il menu aggiungendo la classe inside che contiene un'animazione
     $('.hamburger-menu').addClass('active inside');
     $('.hamburger-menu').removeClass('outside');
 });
 
 // gestisco l'evento click sull'icona "X"
 $('.hamburger-menu>a').click(function() {
-    // quando la "X" viene cliccata nascondo il menu aggiungendo la classe enter che contiene un'animazione
+    // quando la "X" viene cliccata nascondo il menu aggiungendo la classe outside che contiene un'animazione
     $('.hamburger-menu').addClass('outside');
     $('.hamburger-menu').removeClass('inside');
 });
